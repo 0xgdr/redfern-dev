@@ -13,17 +13,17 @@ This tutorial walks through adding a forgot password page to the simple VueJS Fi
 - Part Two [How to Manage User State With Vuex and Firebase](/articles/manage-user-state-vuex-and-firebase)
 - Part Three [Email Verification Using Firebase & VueJS](/articles/email-verification-firebase-vuejs)
 
-The tutorial files are free to download on [Github](https://github.com/garethredfern/vue-auth-demo). This article will focus on code from the [forgot-password branch](https://github.com/garethredfern/vue-auth-demo/tree/forgot-password). Where possible, comments have been added to explain what the code is doing. To get the site up and running on your local machine follow the instructions in the [README](https://github.com/garethredfern/vue-auth-demo/blob/email-verification/README.md) file. The main directory we will be writing our code in is the `src` directory. If you have built VueJS apps in the past, the set-up should be familiar to you.
+The tutorial files are free to download on [Github](https://github.com/0xgdr/vue-auth-demo). This article will focus on code from the [forgot-password branch](https://github.com/0xgdr/vue-auth-demo/tree/forgot-password). Where possible, comments have been added to explain what the code is doing. To get the site up and running on your local machine follow the instructions in the [README](https://github.com/0xgdr/vue-auth-demo/blob/email-verification/README.md) file. The main directory we will be writing our code in is the `src` directory. If you have built VueJS apps in the past, the set-up should be familiar to you.
 
 ### Add Forgot Password Page & Route
 
-Start by adding a `ForgotPassword` component in your [components directory](https://github.com/garethredfern/vue-auth-demo/blob/forgot-password/src/components/ForgotPassword.vue). This will display the form that a user can fill in to send a forgot password email. You will also need to add a route for `/forgot-password`, open up your [routes file](https://github.com/garethredfern/vue-auth-demo/blob/forgot-password/src/router/routes.js) and import the `ForgotPassword` component:
+Start by adding a `ForgotPassword` component in your [components directory](https://github.com/0xgdr/vue-auth-demo/blob/forgot-password/src/components/ForgotPassword.vue). This will display the form that a user can fill in to send a forgot password email. You will also need to add a route for `/forgot-password`, open up your [routes file](https://github.com/0xgdr/vue-auth-demo/blob/forgot-password/src/router/routes.js) and import the `ForgotPassword` component:
 
 ```js
 import ForgotPassword from "@/components/ForgotPassword";
 ```
 
-Next add the following code to the [routes array](https://github.com/garethredfern/vue-auth-demo/blob/forgot-password/src/router/routes.js#L14):
+Next add the following code to the [routes array](https://github.com/0xgdr/vue-auth-demo/blob/forgot-password/src/router/routes.js#L14):
 
 ```js
 {

@@ -9,7 +9,7 @@ pubDate: "2020-09-28T09:00:00Z"
 
 As your blog grows it will more than likely become necessary to paginate the listing page of articles. This post explains one way this can be achieved.
 
-**TL;DR** If you want to refer to the full project code at any time, check out the [nuxt-basic-blog](https://github.com/garethredfern/nuxt-basic-blog) template on GitHub.
+**TL;DR** If you want to refer to the full project code at any time, check out the [nuxt-basic-blog](https://github.com/0xgdr/nuxt-basic-blog) template on GitHub.
 
 ### Page Template Structure
 
@@ -30,7 +30,7 @@ You can read more about [nested pages](https://router.vuejs.org/guide/essentials
 
 The next thing to do is create the `_page` template code which fetches content using the `limit` and `skip` methods. Limiting the number of articles will only show **X** amount per page (`perPage`). We can then use route parameters to determine which page we are on (`currentPage`) and with some fairly simple maths calculate which articles to display on each page. Pass the math calculation to the `skip` method will show the next articles. The example below lists 5 per page, with each page visit displaying the next set of 5 articles.
 
-To keep things tidy and make this code reusable lets create a `getContent` helper method in the [utils folder](https://github.com/garethredfern/nuxt-basic-blog/blob/master/utils/getContent.js). The code for the `getContent` method will look like this:
+To keep things tidy and make this code reusable lets create a `getContent` helper method in the [utils folder](https://github.com/0xgdr/nuxt-basic-blog/blob/master/utils/getContent.js). The code for the `getContent` method will look like this:
 
 ```js
 export default async ($content, params, error) => {
@@ -94,7 +94,7 @@ export default {
 };
 ```
 
-With the above code added to the `_page` template you will be able to use the `paginatedArticles` and `allArticles` properties in the template code. Create an `ArticleList` component which handles looping through the articles and showing the pagination. Check out the full code in the [nuxt-basic-blog](https://github.com/garethredfern/nuxt-basic-blog/blob/master/components/ArticleList.vue) repo over on GitHub.
+With the above code added to the `_page` template you will be able to use the `paginatedArticles` and `allArticles` properties in the template code. Create an `ArticleList` component which handles looping through the articles and showing the pagination. Check out the full code in the [nuxt-basic-blog](https://github.com/0xgdr/nuxt-basic-blog/blob/master/components/ArticleList.vue) repo over on GitHub.
 
 ```js
 <ArticleList
@@ -254,4 +254,4 @@ export default {
 
 ### Final Code
 
-Find the full project code [nuxt-basic-blog](https://github.com/garethredfern/nuxt-basic-blog) on GitHub.
+Find the full project code [nuxt-basic-blog](https://github.com/0xgdr/nuxt-basic-blog) on GitHub.

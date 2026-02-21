@@ -11,8 +11,8 @@ To see what you'll be building, clone and run the example projects locally.
 
 ## Project Repositories
 
-- [Laravel API](https://github.com/garethredfern/laravel-api)
-- [Vue SPA](https://github.com/garethredfern/laravel-vue)
+- [Laravel API](https://github.com/0xgdr/laravel-api)
+- [Vue SPA](https://github.com/0xgdr/laravel-vue)
 
 ## Features Demonstrated
 
@@ -49,7 +49,7 @@ The demo application includes:
 ### 1. Laravel API
 
 ```bash
-git clone https://github.com/garethredfern/laravel-api.git
+git clone https://github.com/0xgdr/laravel-api.git
 cd laravel-api
 cp .env.example .env
 composer install
@@ -61,7 +61,7 @@ composer install
 ### 2. Vue SPA
 
 ```bash
-git clone https://github.com/garethredfern/laravel-vue.git
+git clone https://github.com/0xgdr/laravel-vue.git
 cd laravel-vue
 cp .env.example .env
 npm install

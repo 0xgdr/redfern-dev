@@ -21,8 +21,8 @@ If you would like to hear an excellent explanation from Taylor on how Sanctum an
 
 The example project files can be found on GitHub:
 
-- [Laravel API](https://github.com/garethredfern/laravel-api)
-- [Vue SPA](https://github.com/garethredfern/laravel-vue)
+- [Laravel API](https://github.com/0xgdr/laravel-api)
+- [Vue SPA](https://github.com/0xgdr/laravel-vue)
 
 ## What You'll Build
 
@@ -43,7 +43,7 @@ By the end of this series, you'll have:
 
 ## Questions
 
-If you have any questions please feel free to [start a discussion](https://github.com/garethredfern/laravelvue-spa/discussions) over on GitHub.
+If you have any questions please feel free to [start a discussion](https://github.com/0xgdr/laravelvue-spa/discussions) over on GitHub.
 
 ---
 

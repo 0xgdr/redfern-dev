@@ -9,7 +9,7 @@ pubDate: "2020-05-09T09:00:00Z"
 
 Using GitHub actions for automating your Laravel tests is fairly straight forward, given the starter workflow they provide. For smaller projects where you are using a sqlite database the starter workflow will probably be all you need. If you are using a MYSQL database with your tests then there is a bit more work required, this post should help guide you.
 
-TLDR: the full code for finished workflow can be found on [GitHub](https://gist.github.com/garethredfern/e348f54621e01791e3a1eceb65d6792e).
+TLDR: the full code for finished workflow can be found on [GitHub](https://gist.github.com/0xgdr/e348f54621e01791e3a1eceb65d6792e).
 
 > workflows are written in YAML which is a really simple way of formatting that complies with the JSON spec. While it's easy to learn, it does have very strict rules on formatting and indenting. Remember always indent using 2 spaces.
 
@@ -73,4 +73,4 @@ Finally the test will be run using the MYSQL database that has been created, it 
       run: vendor/bin/phpunit
 ```
 
-Hopefully you have found this useful, the full code can be found up on [GitHub](https://gist.github.com/garethredfern/e348f54621e01791e3a1eceb65d6792e).
+Hopefully you have found this useful, the full code can be found up on [GitHub](https://gist.github.com/0xgdr/e348f54621e01791e3a1eceb65d6792e).

@@ -11,8 +11,8 @@ Previously I wrote about using Laravel Sanctum to build an API for a Vue SPA to 
 
 The project files for this article can be found on Github:
 
-- [Larvel API](https://github.com/garethredfern/laravel-api)
-- [VueJS SPA](https://github.com/garethredfern/laravel-vue)
+- [Larvel API](https://github.com/0xgdr/laravel-api)
+- [VueJS SPA](https://github.com/0xgdr/laravel-vue)
 
 Make sure to check out the [full documentation](/series/laravel-vue-spa) for this project. It covers additional features such as uploading files and pagination.
 
@@ -218,7 +218,7 @@ ResetPassword::createUrlUsing(function ($user, string $token) {
 });
 ```
 
-To make this all work we will need to have a reset-password view in the SPA which handles the token and passes back the users new password. This is explained in [the creating of the SPA article](/articles/authentication-vue-spa-with-laravel-sanctum-fortify), you can review the code on [Github](https://github.com/garethredfern/laravel-vue/blob/main/src/views/ResetPassword.vue).
+To make this all work we will need to have a reset-password view in the SPA which handles the token and passes back the users new password. This is explained in [the creating of the SPA article](/articles/authentication-vue-spa-with-laravel-sanctum-fortify), you can review the code on [Github](https://github.com/0xgdr/laravel-vue/blob/main/src/views/ResetPassword.vue).
 
 ### API Routes
 

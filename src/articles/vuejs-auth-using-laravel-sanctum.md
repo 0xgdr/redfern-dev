@@ -13,15 +13,15 @@ pubDate: "2020-01-12T09:00:00Z"
 
 You can find the source code to the demos I set up here:
 
-- [Laravel API](https://github.com/garethredfern/sanctum-api)
-- [VueJS SPA](https://github.com/garethredfern/sanctum-vue)
+- [Laravel API](https://github.com/0xgdr/sanctum-api)
+- [VueJS SPA](https://github.com/0xgdr/sanctum-vue)
 
 The first thing to do is set up your Laravel project as you normally would, install [Sanctum](https://github.com/laravel/sanctum). Run the migrations and seed the database with the user seed so that you have a user to test auth against.
 
 With Laravel set up there were two controllers needed to give us basic login and logout for the SPA:
 
-- [Login Controller](https://github.com/garethredfern/sanctum-api/blob/master/app/Http/Controllers/API/Auth/LoginController.php)
-- [Logout Controller](https://github.com/garethredfern/sanctum-api/blob/master/app/Http/Controllers/API/Auth/LogoutController.php)
+- [Login Controller](https://github.com/0xgdr/sanctum-api/blob/master/app/Http/Controllers/API/Auth/LoginController.php)
+- [Logout Controller](https://github.com/0xgdr/sanctum-api/blob/master/app/Http/Controllers/API/Auth/LogoutController.php)
 
 The code in these two controllers basically follows the instructions provided in the Sanctum [instructions](https://laravel.com/docs/8.x/sanctum#issuing-mobile-api-tokens) and should be fairly self explanatory. The login controller checks the users credentials and on success creates a token in the `personal_access_tokens` table. The logout controller then clears out this token.
 
@@ -38,11 +38,11 @@ I will assume you have some experience working with the above technologies to ke
 
 ### Setting Up Axios
 
-First set up the [services](https://github.com/garethredfern/sanctum-vue/tree/master/src/services) folder to keep all the API related files. While this is not necessary I found it really useful when building out large-scale apps. Any endpoints you need to access are held in a `service.js` file, organized by each Laravel controller. So for example all auth methods are held in a single [auth service](https://github.com/garethredfern/sanctum-vue/blob/master/src/services/AuthService.js) file. Each service file imports the main [API service](https://github.com/garethredfern/sanctum-vue/blob/master/src/services/API.js) which is where the SPA does all the handling of tokens and logs the user out if Laravel sends a 401 (unauthorized) response.
+First set up the [services](https://github.com/0xgdr/sanctum-vue/tree/master/src/services) folder to keep all the API related files. While this is not necessary I found it really useful when building out large-scale apps. Any endpoints you need to access are held in a `service.js` file, organized by each Laravel controller. So for example all auth methods are held in a single [auth service](https://github.com/0xgdr/sanctum-vue/blob/master/src/services/AuthService.js) file. Each service file imports the main [API service](https://github.com/0xgdr/sanctum-vue/blob/master/src/services/API.js) which is where the SPA does all the handling of tokens and logs the user out if Laravel sends a 401 (unauthorized) response.
 
 ### Protecting Routes in a Vue SPA
 
-The method for protecting your application routes is fairly simple. In the [router](https://github.com/garethredfern/sanctum-vue/blob/master/src/router.js) file there is a meta field `requiresAuth` it's a boolean held against every route you want to protect. Using the Vue router [beforeEach method](https://github.com/garethredfern/sanctum-vue/blob/master/src/router.js#L39) check for a valid token which is held in local storage if it exists then the user is allowed to view the page. I wrote about this in more detail [in another article](/articles/authenticate-users-using-firebase-and-vuejs) if you are interested to learn more on this approach.
+The method for protecting your application routes is fairly simple. In the [router](https://github.com/0xgdr/sanctum-vue/blob/master/src/router.js) file there is a meta field `requiresAuth` it's a boolean held against every route you want to protect. Using the Vue router [beforeEach method](https://github.com/0xgdr/sanctum-vue/blob/master/src/router.js#L39) check for a valid token which is held in local storage if it exists then the user is allowed to view the page. I wrote about this in more detail [in another article](/articles/authenticate-users-using-firebase-and-vuejs) if you are interested to learn more on this approach.
 
 ### Notes on CORS
 

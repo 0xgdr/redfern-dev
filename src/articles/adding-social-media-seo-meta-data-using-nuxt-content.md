@@ -82,7 +82,7 @@ meta: [
 Twitter has its own set of sharing tags called [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards), adding these will display your tweets in a format that is more noticeable and can be embedded/shared in other web content.
 
 <client-only>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s a quick post on adding a sitemap to a <a href="https://twitter.com/nuxt_js?ref_src=twsrc%5Etfw">@nuxt_js</a> site using the content module.<a href="https://t.co/elTgrp37Fp">https://t.co/elTgrp37Fp</a></p>&mdash; Gareth Redfern (@garethredfern) <a href="https://twitter.com/garethredfern/status/1300823052633223169?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s a quick post on adding a sitemap to a <a href="https://twitter.com/nuxt_js?ref_src=twsrc%5Etfw">@nuxt_js</a> site using the content module.<a href="https://t.co/elTgrp37Fp">https://t.co/elTgrp37Fp</a></p>&mdash; Gareth (@garethredfern) <a href="https://twitter.com/0xgdr/status/1300823052633223169?ref_src=twsrc%5Etfw">September 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </client-only>
 
 Add the following code to your meta tag array:
@@ -131,7 +131,7 @@ Again, we use the `hid` property so that we can override this on each article pa
 
 #### The Full Config Code
 
-> Here is a gist with the [complete code](https://gist.github.com/garethredfern/bc3108a44d5e6bdd6de2121e774612bc) that will go in your `nuxt.config.js` file.
+> Here is a gist with the [complete code](https://gist.github.com/0xgdr/bc3108a44d5e6bdd6de2121e774612bc) that will go in your `nuxt.config.js` file.
 
 ### The Single Post Template
 
@@ -174,7 +174,7 @@ You will also need to update the canonical link tag too:
 
 #### The Full Post Template Code
 
-> Here is a gist of the [complete code](https://gist.github.com/garethredfern/e81bfda1a10d08e2277cdd1d7c660034) that goes in your `_slug.vue ` template.
+> Here is a gist of the [complete code](https://gist.github.com/0xgdr/e81bfda1a10d08e2277cdd1d7c660034) that goes in your `_slug.vue ` template.
 
 ### Refactor & Remove Duplicate Code
 
@@ -250,7 +250,7 @@ const description =
 const mainImage = "/a-lovely-image.png";
 ```
 
-Here is a gist of the [complete code](https://gist.github.com/garethredfern/b79c3f95ceb82f213e2d68ce7b5fae5b).
+Here is a gist of the [complete code](https://gist.github.com/0xgdr/b79c3f95ceb82f213e2d68ce7b5fae5b).
 
 Using the `getSiteMeta` method in both the `next.config.js` and `_slug.vue` template will enable us to clean up the duplicate code. Add the following to the top of your `next.config.js` file:
 
@@ -354,4 +354,4 @@ head() {
 
 ### Conclusion
 
-We have written quite a lot of code to get everything in place but you now have a dynamic blog which will have all the correct SEO tags and look good when shared on social media. All the code in this article and the previous one for [building a sitemap](/articles/adding-a-sitemap-using-nuxt-content) can be seen in this [Nuxt starter theme](https://github.com/garethredfern/nuxt-basic-blog), if you have any questions, feel free to [hit me up on Twitter](https://twitter.com/garethredfern).
+We have written quite a lot of code to get everything in place but you now have a dynamic blog which will have all the correct SEO tags and look good when shared on social media. All the code in this article and the previous one for [building a sitemap](/articles/adding-a-sitemap-using-nuxt-content) can be seen in this [Nuxt starter theme](https://github.com/0xgdr/nuxt-basic-blog), if you have any questions, feel free to [hit me up on Twitter](https://twitter.com/0xgdr).
