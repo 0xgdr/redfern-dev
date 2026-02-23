@@ -48,7 +48,7 @@ asyncFunction("One")
   });
 ```
 
-View on [CodePen](https://codepen.io/garethredfern/pen/abNBwMZ)
+View on [CodePen](https://codepen.io/0xgdr/pen/abNBwMZ)
 
 ### Async Await
 
@@ -76,7 +76,7 @@ async function serveAllMeals() {
 serveAllMeals();
 ```
 
-View on [CodePen](https://codepen.io/garethredfern/pen/KKzNdzG)
+View on [CodePen](https://codepen.io/0xgdr/pen/KKzNdzG)
 
 ### Catching Errors
 

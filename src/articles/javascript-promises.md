@@ -50,7 +50,7 @@ fetchData()
   });
 ```
 
-View on [CodePen](https://codepen.io/garethredfern/pen/qBZONRM)
+View on [CodePen](https://codepen.io/0xgdr/pen/qBZONRM)
 
 In the above code we have the fetchData function which creates a new Promise object using a constructor function. Don't worry too much if you don't understand what a constructor function does, just remember:
 
